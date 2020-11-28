@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(../img/imagen2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.titulo{
+    background: rgba(85, 10, 223, 0.198);
+    color: rgb(212, 220, 248);
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+.titulo h1, h3{
+    animation: showText 3s linear;
+}
+@keyframes showText{
+    0%{
+        transform: translateX(-600px) scale(5,5);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(600px) scale(5,5);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-600px) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+    }
+}
+#menu ul li{
+    display: block;
+    float: left;
+    border-right: 1px solid #cccccc;
+}
+#menu ul li a{
+    display: block;
+    padding: 10px;
+    color: rgba(5, 5, 68, 0.733);
+}
+#menu ul li:hover{
+    background:rgba(66, 27, 27, 0.486);
+}
+#menu ul li:hover a{
+    color: white;
+}
+.caja1{
+    background-color: #ccccccd3;
+    background-image: url(../img/ropa\ nueva.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 27%;
+    width: 39%;
+    height: 100px;
+    border:1px solid rgba(66, 27, 27, 0.486);
+    color: white;
+    float: left;
+    margin: 8%;
+    margin-left: 7%;
+    box-shadow: 5px 5px 3px black;
+}
+.caja1 h1{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    animation: showText 5s linear;
+}
+.caja2{
+    background-color: #ccccccd3;
+    background-image: url(../img/ropa\ usada.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 35%;
+    width: 39%;
+    height: 100px;
+    border:1px solid rgba(66, 27, 27, 0.486);
+    color: white;
+    float: left;
+    margin: 8%;
+    margin-left: -3%;
+    box-shadow: 5px 5px 3px black;
+}
+.caja2 h1{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    animation: showText 5s linear;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+#footer{
+    width: 100%;
+    height: 100%;
+    margin-top: 35%;
+    text-align: center;
+    background-color: black;
+    color: rgb(235, 234, 241);
+
+}
+#footer iframe{
+    width: 30%;
+    height: 10%;
+    margin-top: 7%;
+    margin-left: -90%;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+#footer h1{
+    display: block;
+    background: url("../img/pxgray.png"), white;
+    width: 30%;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.statcounter{
+    color: black;
+}
+.ubicacion h1{
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.ubicacion p{
+    margin-left: -51%;
+}
+.contacto h1{
+    float: left;
+    margin-left: 53%;
+    margin-top: -17%;
+}
+.autor h1{
+    float: left;
+    margin-left: 53%;
+    margin-top: -8%;
+}
+.autor p{
+    float: left;
+    margin-left: 55%;
+    margin-top: -3%;
+    font-size: 100%;
+}
+.container-redes{
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-redes img{
+    width: 60px;
+    padding: 4px;
+    background: rgba(0,0,0,0.0);
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 300ms;
+}
+.container-redes a:hover img{
+    background: rgba(233, 214, 214, 0.698);
+}
+.whatsapp{
+    position: absolute;
+    float: left;
+    margin-left: 61%;
+    margin-top: -21%;
+}
+.messenger{
+    position: absolute;
+    float: left;
+    margin-left: 69%;
+    margin-top: -21%;
+}
